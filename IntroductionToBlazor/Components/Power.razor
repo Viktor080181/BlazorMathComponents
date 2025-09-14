@@ -1,0 +1,18 @@
+﻿<h3>Power</h3>
+
+<input type="number" @bind="Base" placeholder="Основание" />
+<input type="number" @bind="Exponent" placeholder="Степень" />
+<button @onclick="CalculatePower">Вычислить</button>
+
+<p>@Base ^ @Exponent = @Result</p>
+
+@code {
+    private double Base { get; set; } = 0;
+    private double Exponent { get; set; } = 0;
+    private double Result { get; set; } = 1;
+
+    private void CalculatePower()
+    {
+        Result = Math.Pow(Base, Exponent);
+    }
+}

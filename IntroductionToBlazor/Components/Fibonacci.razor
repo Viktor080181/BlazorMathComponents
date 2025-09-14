@@ -1,0 +1,39 @@
+﻿<h3>Fibonacci</h3>
+
+<input type="number" min="1" @bind="MaxNumber" placeholder="Максимальное число" />
+<button @onclick="CalculateFibonacci">Вычислить ряд</button>
+
+@if (FibonacciSequence.Any())
+{
+    <p>Ряд Фибоначчи до @MaxNumber:</p>
+    <ul>
+        @foreach (var num in FibonacciSequence)
+        {
+            <li>@num</li>
+        }
+    </ul>
+}
+
+@code {
+    private int MaxNumber { get; set; } = 1;
+    private List<long> FibonacciSequence { get; set; } = new();
+
+    private void CalculateFibonacci()
+    {
+        FibonacciSequence.Clear();
+        if (MaxNumber < 0) return; // Отрицательные числа не поддерживаются
+
+        long a = 0, b = 1;
+        FibonacciSequence.Add(a);
+        if (MaxNumber >= 1) FibonacciSequence.Add(b);
+
+        while (true)
+        {
+            long next = a + b;
+            if (next > MaxNumber) break;
+            FibonacciSequence.Add(next);
+            a = b;
+            b = next;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿@page "/factorial"
+@rendermode InteractiveServer
+
+<h3>Factorial</h3>
+
+<input type="number" min="0" max="20" @bind="n" />
+<button @onclick="Calculate">Вычислить факториал</button>
+<label style="font-size:24px; margin-left:10px;">!= @factorial</label>
+
+<hr />
+
+<!-- Компонент Power -->
+<Power />
+
+<hr />
+
+<!-- Компонент Fibonacci -->
+<Fibonacci />
+
+@code {
+    int n = 0;
+    long factorial = 1;
+
+    void Calculate()
+    {
+        factorial = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            factorial *= i;
+        }
+    }
+}
