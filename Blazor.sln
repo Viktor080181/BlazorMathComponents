@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToBlazor", "IntroductionToBlazor\IntroductionToBlazor.csproj", "{C4118BD4-71D6-4799-898A-55F44FC354CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy", "Academy\Academy.csproj", "{A9CEC382-B4E2-45AF-A777-62C9E67C0430}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4118BD4-71D6-4799-898A-55F44FC354CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4118BD4-71D6-4799-898A-55F44FC354CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4118BD4-71D6-4799-898A-55F44FC354CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4118BD4-71D6-4799-898A-55F44FC354CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CEC382-B4E2-45AF-A777-62C9E67C0430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CEC382-B4E2-45AF-A777-62C9E67C0430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CEC382-B4E2-45AF-A777-62C9E67C0430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CEC382-B4E2-45AF-A777-62C9E67C0430}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {156C7577-D3B9-4740-BFBC-78B5CB260603}
+	EndGlobalSection
+EndGlobal
